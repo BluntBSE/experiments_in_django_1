@@ -31,6 +31,7 @@ class World {
 
     loop.updatables.push(cube);
     loop.updatables.push(skybox);
+    loop.updatables.push(camera);
 
     scene.add(cube);
     scene.add(directionalLight, ambientLight);

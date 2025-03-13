@@ -62,9 +62,7 @@ function createSkybox() {
   const skybox = new Mesh(geometry, material);
 
   skybox.tick = (delta) => {
-    material.uniforms.uTime.value += delta;
-    console.log("Incremented the uniform value by " + delta);
-    console.log(material.uniforms.uTime.value);
+    material.uniforms.uTime.value += delta * 0.2;
   };
   return skybox;
 }
